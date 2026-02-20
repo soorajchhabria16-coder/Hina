@@ -1,18 +1,29 @@
 import Link from 'next/link';
+import { Menu } from 'lucide-react';
 
 export function Header() {
   return (
-    <header className="w-full py-8 px-8 md:px-16 lg:px-24 flex items-center justify-between sticky top-0 bg-[#fcfcfc]/80 backdrop-blur-md z-50">
-      <Link href="/" className="font-serif text-[28px] font-bold tracking-tighter text-[#1a1a1a]">
-        Hina Usman
-      </Link>
-      <nav className="hidden md:flex items-center gap-10 text-[11px] font-bold text-gray-400 tracking-[0.2em]">
-        <Link href="#about" className="hover:text-[#135c58] transition-colors uppercase">About</Link>
-        <Link href="#services" className="hover:text-[#135c58] transition-colors uppercase">Services</Link>
-        <Link href="#research" className="hover:text-[#135c58] transition-colors uppercase">Research</Link>
-        <Link href="#contact" className="hover:text-[#135c58] transition-colors uppercase">Contact</Link>
-      </nav>
-      <div className="md:hidden w-6 h-[2px] bg-[#1a1a1a] relative after:absolute after:top-[-6px] after:left-0 after:w-full after:h-full after:bg-[#1a1a1a] before:absolute before:top-[6px] before:left-0 before:w-full before:h-full before:bg-[#1a1a1a]"></div>
-    </header>
+    <nav className="sticky top-0 z-50 w-full backdrop-blur-md bg-[#f8fafb]/80 dark:bg-[#1a202c]/80 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          <div className="flex-shrink-0 flex items-center">
+            <Link href="/" className="font-serif font-bold text-2xl text-[#0f5e63] tracking-tight">
+              Hina Usman
+            </Link>
+          </div>
+          <div className="hidden md:flex space-x-8">
+            <Link href="#about" className="text-gray-600 dark:text-gray-300 hover:text-[#0f5e63] dark:hover:text-[#0f5e63] transition-colors text-sm font-medium uppercase tracking-wider">About</Link>
+            <Link href="#services" className="text-gray-600 dark:text-gray-300 hover:text-[#0f5e63] dark:hover:text-[#0f5e63] transition-colors text-sm font-medium uppercase tracking-wider">Services</Link>
+            <Link href="#research" className="text-gray-600 dark:text-gray-300 hover:text-[#0f5e63] dark:hover:text-[#0f5e63] transition-colors text-sm font-medium uppercase tracking-wider">Research</Link>
+            <Link href="#contact" className="text-gray-600 dark:text-gray-300 hover:text-[#0f5e63] dark:hover:text-[#0f5e63] transition-colors text-sm font-medium uppercase tracking-wider">Contact</Link>
+          </div>
+          <div className="md:hidden flex items-center">
+            <button className="text-gray-600 dark:text-gray-300 hover:text-[#0f5e63] focus:outline-none transition-colors" aria-label="Open Main Menu">
+              <Menu className="h-6 w-6" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 }
