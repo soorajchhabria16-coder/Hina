@@ -1,6 +1,19 @@
 @import "tailwindcss";
 
 @theme {
+  --color-primary: #0f5e63;
+  --color-secondary: #ff6b6b;
+  --color-background-light: #f8fafb;
+  --color-background-dark: #1a202c;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #2d3748;
+  --color-text-light: #1f2937;
+  --color-text-dark: #e2e8f0;
+  --color-accent-light: #e0f2f1;
+  --color-accent-dark: #234e52;
+
+  --rounded-blob: 60% 40% 30% 70% / 60% 30% 70% 40%;
+
   @keyframes shimmer {
     0% {
       transform: translateX(-100%);
@@ -9,8 +22,51 @@
       transform: translateX(100%);
     }
   }
+
+  @keyframes morph {
+    0% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+  }
 }
 
 @utility animate-shimmer {
   animation: shimmer 2.5s infinite;
+}
+
+@utility animate-morph {
+  animation: morph 8s ease-in-out infinite;
+}
+
+@utility blob-shape {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite;
+}
+
+@utility highlight {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #ff6b6b; /* secondary color */
+    opacity: 0.3;
+    z-index: -1;
+    transition: height 0.3s ease;
+  }
+
+  &:hover::after {
+    height: 100%;
+  }
 }

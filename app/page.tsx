@@ -36,10 +36,13 @@ export default function Home() {
                   <div className="absolute -top-10 -right-10 w-32 h-32 bg-secondary opacity-20 rounded-full blur-2xl"></div>
                   <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-primary opacity-20 rounded-full blur-2xl"></div>
                   <div className="w-full h-full blob-shape overflow-hidden shadow-2xl bg-gray-200 dark:bg-gray-700 relative z-10">
-                    <img
+                    <Image
                       src="/hina-portrait.jpg"
-                      alt="Hina Usman"
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      alt="Hina Usman portrait"
+                      width={600}
+                      height={600}
+                      className="w-full h-full object-cover"
+                      priority
                     />
                   </div>
                 </div>
@@ -346,7 +349,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <span className="font-serif font-bold text-2xl text-white tracking-tight">Hina Usman</span>
-              <p className="text-sm mt-2">© {new Date().getFullYear()} All rights reserved. </p>
+              <p className="text-sm mt-2">© {new Date().getFullYear()} All rights reserved.</p>
             </div>
             <div className="flex space-x-6 text-sm">
               <Link href="#about" className="hover:text-white transition-colors" title="About Section" aria-label="Navigate to About section">About</Link>
