@@ -32,7 +32,7 @@ export default function Home() {
               </span>.
             </h1>
             <p className="text-base md:text-[17px] text-gray-500 max-w-sm leading-relaxed">
-              Dedicated Associate Psychologist, Lecturer, and Research Associate with expertise in evidence-based therapies, psychological assessments, and academic writing. Experienced in clinical practice, teaching, and research across various age groups.
+              Dedicated Associate Psychologist, Lecturer, and Research Associate integrating evidence-based therapies, psychological assessment, and academic writing to support mental health across the lifespan.
             </p>
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <Link href="#contact" className="inline-flex items-center justify-center rounded-full bg-[#135c58] px-8 py-3.5 text-sm font-semibold text-white hover:shadow-lg transition-all">
@@ -53,14 +53,14 @@ export default function Home() {
           <h2 className="font-serif text-[32px] md:text-[42px] lg:text-[52px] max-w-4xl leading-[1.2] text-[#1a1a1a]">
             I work at the intersection of clinical practice,{' '}
             <span className="relative inline-block px-1">
-              <span className="relative z-10">teaching</span>
+              <span className="relative z-10">education</span>
               <span className="absolute bottom-1 left-0 w-full h-[14px] bg-[#ffe4e6] -z-10 rounded-sm"></span>
             </span>, and{' '}
             <span className="relative inline-block px-1">
               <span className="relative z-10">research</span>
               <span className="absolute bottom-1 left-0 w-full h-[14px] bg-[#ffe4e6] -z-10 rounded-sm"></span>
             </span>{' '}
-            to foster educational excellence and holistic well-being.
+            to foster holistic well-being and educational excellence.
           </h2>
           <div className="w-[1px] h-24 bg-gray-100 mt-20"></div>
         </section>
@@ -81,7 +81,7 @@ export default function Home() {
               </div>
               <h4 className="font-serif text-2xl mb-4 text-[#1a1a1a]">Individual Therapy</h4>
               <p className="text-gray-500 mb-10 leading-relaxed text-[15px]">
-                Certified in DBT, CBT, ACT, Gestalt, Humanistic, Transactional Analysis, and Art Therapy. Dedicated to individual sessions focusing on personal growth, emotional resilience, and evidence-based interventions.
+                One-on-one sessions drawing on DBT, CBT, ACT, humanistic and gestalt approaches to support anxiety, emotional regulation, and personal growth.
               </p>
               <Link href="#contact" className="inline-flex items-center text-sm font-semibold text-[#135c58] group-hover:gap-2 transition-all">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
@@ -94,9 +94,9 @@ export default function Home() {
               <div className="w-14 h-14 rounded-full bg-[#be185d]/5 flex items-center justify-center text-[#be185d] mb-8">
                 <Users className="w-7 h-7" />
               </div>
-              <h4 className="font-serif text-2xl mb-4 text-[#1a1a1a]">Psychological Assessment</h4>
+              <h4 className="font-serif text-2xl mb-4 text-[#1a1a1a]">Adolescent & Young Adult Support</h4>
               <p className="text-gray-500 mb-10 leading-relaxed text-[15px]">
-                Conducting comprehensive psychological and personality assessments for individuals across age groups, with case conceptualization and evidence-based recommendations.
+                Specialized support for adolescents and young adults navigating identity, academic pressure, self-harm, and relational challenges.
               </p>
               <Link href="#contact" className="inline-flex items-center text-sm font-semibold text-[#be185d] group-hover:gap-2 transition-all">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
@@ -109,9 +109,9 @@ export default function Home() {
               <div className="w-14 h-14 rounded-full bg-[#135c58]/5 flex items-center justify-center text-[#135c58] mb-8">
                 <Lightbulb className="w-7 h-7" />
               </div>
-              <h4 className="font-serif text-2xl mb-4 text-[#1a1a1a]">Research & Academic Writing</h4>
+              <h4 className="font-serif text-2xl mb-4 text-[#1a1a1a]">Psycho-Education & Assessment</h4>
               <p className="text-gray-500 mb-10 leading-relaxed text-[15px]">
-                Published researcher and visiting faculty member with expertise in quantitative analysis (SPSS), academic writing, and fostering educational excellence across university and college settings.
+                Workshops and clinical assessments focused on psychological well-being, personality, case conceptualization, and mental health awareness.
               </p>
               <Link href="#contact" className="inline-flex items-center text-sm font-semibold text-[#135c58] group-hover:gap-2 transition-all">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
@@ -128,9 +128,9 @@ export default function Home() {
             <div className="lg:col-span-5 space-y-10">
               <div className="space-y-4">
                 <h3 className="text-[11px] font-bold tracking-[0.2em] text-[#be185d] uppercase">Academic Career</h3>
-                <h2 className="font-serif text-[42px] text-[#1a1a1a]">Teaching Roles</h2>
+                <h2 className="font-serif text-[42px] text-[#1a1a1a]">Teaching & Clinical Roles</h2>
                 <p className="text-gray-500 leading-relaxed text-[15px] max-w-sm">
-                  As a lecturer, I engage students in critical thinking and the practical application of psychological principles.
+                  As a lecturer and clinician, I engage students and clients in critical, compassionate inquiry grounded in psychological science.
                 </p>
               </div>
 
@@ -153,8 +153,8 @@ export default function Home() {
                 {/* Timeline Item 3 */}
                 <div className="relative">
                   <div className="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-gray-300 border-[3px] border-white shadow-sm"></div>
-                  <h4 className="text-[17px] font-bold text-[#1a1a1a]">Associate Clinical Psychologist</h4>
-                  <p className="text-sm text-gray-500 mt-1">Integrated Psychology Clinic (Part-time)</p>
+                  <h4 className="text-[17px] font-bold text-[#1a1a1a]">Associate Clinical Psychologist (Part-time)</h4>
+                  <p className="text-sm text-gray-500 mt-1">Integrated Psychology Clinic</p>
                   <p className="text-[12px] font-bold text-gray-400 uppercase tracking-widest mt-2 px-2 py-0.5 bg-gray-50 inline-block rounded-md">Jun 2024 – Jan 2025</p>
                 </div>
                 {/* Timeline Item 4 */}
@@ -182,9 +182,9 @@ export default function Home() {
                       </h4>
                       <p className="text-[13px] font-medium text-gray-400">Usman, H. (2024) · Kurdish Studies, 12(5), 1463–1473</p>
                       <div className="flex flex-wrap gap-2 pt-2">
-                        <span className="px-4 py-1.5 bg-gray-50 text-gray-500 text-[11px] font-bold uppercase tracking-wider rounded-full group-hover:bg-[#135c58]/5 group-hover:text-[#135c58] transition-colors">Psychology</span>
+                        <span className="px-4 py-1.5 bg-gray-50 text-gray-500 text-[11px] font-bold uppercase tracking-wider rounded-full group-hover:bg-[#135c58]/5 group-hover:text-[#135c58] transition-colors">Childhood Sexual Abuse</span>
                         <span className="px-4 py-1.5 bg-gray-50 text-gray-500 text-[11px] font-bold uppercase tracking-wider rounded-full group-hover:bg-[#135c58]/5 group-hover:text-[#135c58] transition-colors">Self-Harm</span>
-                        <span className="px-4 py-1.5 bg-gray-50 text-gray-500 text-[11px] font-bold uppercase tracking-wider rounded-full group-hover:bg-[#135c58]/5 group-hover:text-[#135c58] transition-colors">Research</span>
+                        <span className="px-4 py-1.5 bg-gray-50 text-gray-500 text-[11px] font-bold uppercase tracking-wider rounded-full group-hover:bg-[#135c58]/5 group-hover:text-[#135c58] transition-colors">Self-Blame</span>
                       </div>
                     </div>
                     <div className="w-12 h-12 rounded-full border border-gray-100 flex items-center justify-center text-gray-300 group-hover:text-[#135c58] group-hover:border-[#135c58]/20 transition-all duration-300">
@@ -194,18 +194,18 @@ export default function Home() {
                 </a>
 
                 {/* Pub 2 */}
-                <a href="https://doi.org/10.59670/ml.v21i14.11300" target="_blank" rel="noopener noreferrer" className="group block bg-white border border-gray-100/50 rounded-[40px] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.02)] hover:shadow-[0_25px_60px_rgba(190,24,93,0.06)] transition-all duration-500 relative overflow-hidden">
+                <a href="https://doi.org/10.59670/ml.v21iS14.11300" target="_blank" rel="noopener noreferrer" className="group block bg-white border border-gray-100/50 rounded-[40px] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.02)] hover:shadow-[0_25px_60px_rgba(190,24,93,0.06)] transition-all duration-500 relative overflow-hidden">
                   <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#be185d] rounded-l-full"></div>
                   <div className="flex items-start justify-between gap-6">
                     <div className="space-y-4">
                       <h4 className="font-serif text-[22px] font-bold text-[#1a1a1a] leading-tight group-hover:text-[#be185d] transition-colors">
-                        A Comparative Study of the Meaning of Life, Academic Motivation, Learning Styles, Study Habits, and Academic Achievement Between University and College Students
+                        A Comparative Study of the Meaning of Life, Academic Motivation, Learning Styles, Study Habits, and Academic Achievement Between University and College Students in Different Educational Institutions
                       </h4>
                       <p className="text-[13px] font-medium text-gray-400">Usman, H. (2024) · Migration Letters, 21(S14), 525–544</p>
                       <div className="flex flex-wrap gap-2 pt-2">
-                        <span className="px-4 py-1.5 bg-gray-50 text-gray-500 text-[11px] font-bold uppercase tracking-wider rounded-full group-hover:bg-[#be185d]/5 group-hover:text-[#be185d] transition-colors">Academic Achievement</span>
+                        <span className="px-4 py-1.5 bg-gray-50 text-gray-500 text-[11px] font-bold uppercase tracking-wider rounded-full group-hover:bg-[#be185d]/5 group-hover:text-[#be185d] transition-colors">Meaning of Life</span>
+                        <span className="px-4 py-1.5 bg-gray-50 text-gray-500 text-[11px] font-bold uppercase tracking-wider rounded-full group-hover:bg-[#be185d]/5 group-hover:text-[#be185d] transition-colors">Academic Motivation</span>
                         <span className="px-4 py-1.5 bg-gray-50 text-gray-500 text-[11px] font-bold uppercase tracking-wider rounded-full group-hover:bg-[#be185d]/5 group-hover:text-[#be185d] transition-colors">Learning Styles</span>
-                        <span className="px-4 py-1.5 bg-gray-50 text-gray-500 text-[11px] font-bold uppercase tracking-wider rounded-full group-hover:bg-[#be185d]/5 group-hover:text-[#be185d] transition-colors">Education</span>
                       </div>
                     </div>
                     <div className="w-12 h-12 rounded-full border border-gray-100 flex items-center justify-center text-gray-300 group-hover:text-[#be185d] group-hover:border-[#be185d]/20 transition-all duration-300">
