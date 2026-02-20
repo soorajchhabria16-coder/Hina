@@ -9,17 +9,29 @@ export default function Home() {
       <Header />
 
       <main className="flex-grow">
-        {/* --- Hero Section --- */}
-        <section id="about" className="pt-24 pb-20 md:pt-32 md:pb-32 px-6 sm:px-12 lg:px-24">
-          <div className="max-w-6xl mx-auto">
+        {/* --- Improvised Hero Section --- */}
+        <section id="about" className="relative overflow-hidden pt-24 pb-20 md:pt-32 md:pb-32 px-6 sm:px-12 lg:px-24">
+          {/* Subtle Background Elements */}
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+
+          <div className="max-w-6xl mx-auto relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-10 order-2 lg:order-1 text-center lg:text-left">
                 <div className="space-y-4">
-                  <span className="inline-block py-1.5 px-4 bg-primary/5 text-primary text-xs font-bold uppercase tracking-widest rounded-full">
-                    Associate Psychologist & Lecturer
-                  </span>
+                  <div className="flex items-center justify-center lg:justify-start gap-3">
+                    <span className="w-8 h-px bg-primary/30"></span>
+                    <span className="text-primary text-xs font-bold uppercase tracking-[0.3em]">
+                      Clinical Psychologist
+                    </span>
+                  </div>
                   <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-gray-900 font-bold">
-                    Holding space for <span className="italic text-primary">healing</span>, growth, and meaning.
+                    Holding space for <span className="italic text-primary relative inline-block">
+                      healing
+                      <svg className="absolute -bottom-2 left-0 w-full h-2 text-accent/30" viewBox="0 0 100 10" preserveAspectRatio="none">
+                        <path d="M0 5 Q 25 0, 50 5 T 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
+                      </svg>
+                    </span>, growth, and meaning.
                   </h1>
                 </div>
 
@@ -28,24 +40,34 @@ export default function Home() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start pt-4">
-                  <Link href="#contact" className="px-10 py-4 bg-primary text-white font-medium rounded-full hover:bg-secondary transition-all shadow-lg shadow-primary/20">
+                  <Link href="#contact" className="px-10 py-4 bg-primary text-white font-medium rounded-full hover:bg-secondary transition-all shadow-lg shadow-primary/20 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0">
                     Get in Touch
                   </Link>
-                  <Link href="#research" className="px-10 py-4 border border-gray-200 text-gray-700 font-medium rounded-full hover:border-primary hover:text-primary transition-all">
-                    View Publications
+                  <Link href="#research" className="px-10 py-4 border border-gray-200 text-gray-700 font-medium rounded-full hover:border-primary hover:text-primary transition-all group">
+                    View Publications <ArrowRight className="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
 
-              <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-                <div className="relative w-full max-w-[450px] aspect-square rounded-2xl overflow-hidden shadow-[20px_20px_60px_-15px_rgba(0,0,0,0.1)] border-8 border-white">
-                  <Image
-                    src="/hina-portrait.jpg"
-                    alt="Hina Usman"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
+              <div className="order-1 lg:order-2 flex justify-center lg:justify-end relative">
+                {/* Improvised Blob with Glow */}
+                <div className="relative w-full max-w-[480px] aspect-square">
+                  <div className="absolute inset-0 bg-primary/20 rounded-full blur-[80px] animate-pulse"></div>
+                  <div className="w-full h-full blob-shape overflow-hidden shadow-2xl relative z-10 border-4 border-white">
+                    <Image
+                      src="/hina-portrait.jpg"
+                      alt="Hina Usman"
+                      fill
+                      className="object-cover scale-105"
+                      priority
+                    />
+                  </div>
+                  {/* Floating decorative element */}
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-white rounded-2xl shadow-xl flex items-center justify-center z-20 animate-bounce transition-all duration-1000">
+                    <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center">
+                      <User className="w-6 h-6" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -53,8 +75,8 @@ export default function Home() {
         </section>
 
         {/* --- Philosophy --- */}
-        <section className="py-24 bg-gray-50 border-y border-gray-100">
-          <div className="max-w-4xl mx-auto px-6 text-center">
+        <section className="py-24 bg-gray-50 border-y border-gray-100 relative overflow-hidden">
+          <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight text-gray-800 italic">
               "I work at the intersection of clinical practice, education, and research to foster holistic well-being and educational excellence."
             </h2>
@@ -77,7 +99,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Service 1 */}
               <div className="group p-10 bg-white border border-gray-100 rounded-3xl hover:border-primary/20 hover:shadow-xl transition-all duration-300">
-                <div className="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center mb-8">
+                <div className="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                   <User className="w-7 h-7" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors">Individual Therapy</h3>
@@ -105,7 +127,7 @@ export default function Home() {
 
               {/* Service 3 */}
               <div className="group p-10 bg-white border border-gray-100 rounded-3xl hover:border-primary/20 hover:shadow-xl transition-all duration-300">
-                <div className="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center mb-8">
+                <div className="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                   <BookOpen className="w-7 h-7" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors">Psycho-Education</h3>
@@ -165,12 +187,8 @@ export default function Home() {
                           Understanding The Impact of Childhood Sexual Abuse and Child Maltreatment on Non-Suicidal Self-Harm
                         </h4>
                         <p className="text-sm text-gray-500 italic">Kurdish Studies, 12(5), 1463–1473, 2024</p>
-                        <div className="flex flex-wrap gap-2 pt-2">
-                          <span className="px-3 py-1 bg-gray-100 text-[10px] font-bold uppercase tracking-wider text-gray-600 rounded-full">Self-Harm</span>
-                          <span className="px-3 py-1 bg-gray-100 text-[10px] font-bold uppercase tracking-wider text-gray-600 rounded-full">Research</span>
-                        </div>
                       </div>
-                      <a href="https://doi.org/10.53555/ks.v12i5.3497" target="_blank" className="p-2 text-gray-300 hover:text-primary transition-colors">
+                      <a href="https://doi.org/10.53555/ks.v12i5.3497" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-300 hover:text-primary transition-colors">
                         <ExternalLink className="w-5 h-5" />
                       </a>
                     </div>
@@ -184,12 +202,8 @@ export default function Home() {
                           A Comparative Study of the Meaning of Life and Academic Motivation
                         </h4>
                         <p className="text-sm text-gray-500 italic">Migration Letters, 21(S14), 525–544, 2024</p>
-                        <div className="flex flex-wrap gap-2 pt-2">
-                          <span className="px-3 py-1 bg-gray-100 text-[10px] font-bold uppercase tracking-wider text-gray-600 rounded-full">Meaning of Life</span>
-                          <span className="px-3 py-1 bg-gray-100 text-[10px] font-bold uppercase tracking-wider text-gray-600 rounded-full">Education</span>
-                        </div>
                       </div>
-                      <a href="https://doi.org/10.59670/ml.v21iS14.11300" target="_blank" className="p-2 text-gray-300 hover:text-primary transition-colors">
+                      <a href="https://doi.org/10.59670/ml.v21iS14.11300" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-300 hover:text-primary transition-colors">
                         <ExternalLink className="w-5 h-5" />
                       </a>
                     </div>
@@ -214,20 +228,20 @@ export default function Home() {
                 </div>
 
                 <div className="space-y-6">
-                  <div className="flex items-center gap-5">
-                    <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                  <div className="flex items-center gap-5 group">
+                    <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-primary transition-all">
                       <Mail className="w-5 h-5" />
                     </div>
                     <p>hinau766@gmail.com</p>
                   </div>
-                  <div className="flex items-center gap-5">
-                    <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                  <div className="flex items-center gap-5 group">
+                    <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-primary transition-all">
                       <Phone className="w-5 h-5" />
                     </div>
                     <p>0335-7462807</p>
                   </div>
-                  <div className="flex items-center gap-5">
-                    <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                  <div className="flex items-center gap-5 group">
+                    <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-primary transition-all">
                       <Linkedin className="w-5 h-5" />
                     </div>
                     <p>linkedin.com/in/hina-usman/</p>
@@ -249,7 +263,7 @@ export default function Home() {
                     <label className="text-xs font-bold uppercase tracking-widest text-gray-400">Message</label>
                     <textarea rows={4} className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none" placeholder="How can I help you?"></textarea>
                   </div>
-                  <button className="w-full py-5 bg-primary text-white font-bold rounded-xl hover:bg-secondary transition-all transform hover:-translate-y-1 active:scale-95 shadow-lg shadow-primary/20">
+                  <button type="button" className="w-full py-5 bg-primary text-white font-bold rounded-xl hover:bg-secondary transition-all transform hover:-translate-y-1 active:scale-95 shadow-lg shadow-primary/20">
                     Send Inquiry
                   </button>
                 </form>

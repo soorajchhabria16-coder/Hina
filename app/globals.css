@@ -4,9 +4,33 @@
   --color-primary: #135c58;
   --color-secondary: #0f4a47;
   --color-accent: #ff6b6b;
+  --color-accent-light: #e0f2f1;
+  --color-accent-dark: #234e52;
+
+  @keyframes morph {
+    0% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+  }
+
   --color-background: #fcfcfc;
   --color-text: #1a1a1a;
   --color-text-muted: #4b5563;
+}
+
+@utility animate-morph {
+  animation: morph 20s ease-in-out infinite;
+}
+
+@utility blob-shape {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 15s ease-in-out infinite;
 }
 
 @layer base {
