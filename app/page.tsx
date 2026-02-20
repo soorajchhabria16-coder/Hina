@@ -346,7 +346,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <span className="font-serif font-bold text-2xl text-white tracking-tight">Hina Usman</span>
-              <p className="text-sm mt-2">© {new Date().getFullYear()} All rights reserved.</p>
+              <p className="text-sm mt-2">© {new Date().getFullYear()} All rights reserved. v1.1</p>
             </div>
             <div className="flex space-x-6 text-sm">
               <Link href="#about" className="hover:text-white transition-colors" title="About Section" aria-label="Navigate to About section">About</Link>
