@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
-import { Mail, Linkedin, Phone, ExternalLink, ArrowRight, User, BookOpen, GraduationCap, Award } from 'lucide-react';
+import { Mail, Linkedin, ExternalLink, ArrowRight, User, BookOpen, GraduationCap, Award } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -373,24 +373,7 @@ export default function Home() {
                       <p className="text-lg font-medium group-hover:translate-x-1 transition-transform">hinau766@gmail.com</p>
                     </div>
                   </a>
-                  <div className="flex items-center gap-6 group w-fit">
-                    <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-500 group-hover:scale-110 shadow-lg shadow-white/5">
-                      <Phone className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold text-white/40 uppercase tracking-widest mb-1">WhatsApp</p>
-                      <p className="text-lg font-medium">0335-7462807</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-6 group w-fit">
-                    <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-500 group-hover:scale-110 shadow-lg shadow-white/5 shrink-0">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold text-white/40 uppercase tracking-widest mb-1">Location</p>
-                      <p className="text-sm font-medium leading-relaxed max-w-[200px]">Dulara Pride Apartments, Numaish, Soldier Bazaar, Karachi</p>
-                    </div>
-                  </div>
+
                   <a href="https://linkedin.com/in/hina-usman/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 group w-fit">
                     <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center group-hover:bg-[#0077b5] group-hover:text-white transition-all duration-500 group-hover:scale-110">
                       <Linkedin className="w-6 h-6" />
@@ -404,20 +387,37 @@ export default function Home() {
               </div>
 
               <div className="bg-white/5 backdrop-blur-3xl rounded-[3rem] p-8 md:p-14 border border-white/10 shadow-2xl">
-                <form className="space-y-8">
+                <form action="https://formspree.io/f/hinau766@gmail.com" method="POST" className="space-y-8">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <div className="space-y-3">
                       <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 ml-1">Full Name</label>
-                      <input type="text" className="w-full bg-white/10 border-none rounded-2xl p-5 text-white placeholder-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all" placeholder="Jane Doe" />
+                      <input
+                        type="text"
+                        name="name"
+                        required
+                        className="w-full bg-white/10 border-none rounded-2xl p-5 text-white placeholder-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all"
+                        placeholder="Jane Doe"
+                      />
                     </div>
                     <div className="space-y-3">
                       <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 ml-1">Email Address</label>
-                      <input type="email" className="w-full bg-white/10 border-none rounded-2xl p-5 text-white placeholder-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all" placeholder="jane@example.com" />
+                      <input
+                        type="email"
+                        name="email"
+                        required
+                        className="w-full bg-white/10 border-none rounded-2xl p-5 text-white placeholder-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all"
+                        placeholder="jane@example.com"
+                      />
                     </div>
                   </div>
                   <div className="space-y-3">
                     <label htmlFor="subject" className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 ml-1">Subject</label>
-                    <select id="subject" name="subject" aria-label="Select inquiry subject" className="w-full bg-white/10 border-none rounded-2xl p-5 text-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all appearance-none cursor-pointer">
+                    <select
+                      id="subject"
+                      name="subject"
+                      aria-label="Select inquiry subject"
+                      className="w-full bg-white/10 border-none rounded-2xl p-5 text-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all appearance-none cursor-pointer"
+                    >
                       <option className="bg-primary text-white">Clinical Inquiry</option>
                       <option className="bg-primary text-white">Academic Collaboration</option>
                       <option className="bg-primary text-white">Research Opportunity</option>
@@ -426,9 +426,18 @@ export default function Home() {
                   </div>
                   <div className="space-y-3">
                     <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 ml-1">Your Message</label>
-                    <textarea rows={4} className="w-full bg-white/10 border-none rounded-2xl p-5 text-white placeholder-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all resize-none font-light" placeholder="Describe how I can support you..."></textarea>
+                    <textarea
+                      name="message"
+                      required
+                      rows={4}
+                      className="w-full bg-white/10 border-none rounded-2xl p-5 text-white placeholder-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all resize-none font-light"
+                      placeholder="Describe how I can support you..."
+                    ></textarea>
                   </div>
-                  <button type="button" className="w-full py-6 bg-white text-primary font-bold rounded-2xl hover:bg-accent hover:text-white transition-all transform hover:-translate-y-1 active:scale-95 shadow-2xl shadow-black/20 text-lg uppercase tracking-widest">
+                  <button
+                    type="submit"
+                    className="w-full py-6 bg-white text-primary font-bold rounded-2xl hover:bg-accent hover:text-white transition-all transform hover:-translate-y-1 active:scale-95 shadow-2xl shadow-black/20 text-lg uppercase tracking-widest"
+                  >
                     Send Message
                   </button>
                 </form>

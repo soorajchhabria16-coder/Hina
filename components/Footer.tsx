@@ -38,7 +38,7 @@ export function Footer() {
             </a>
           </div>
           <p className="text-sm text-[#e6f2f1]/60">hinau766@gmail.com</p>
-          <p className="text-sm text-[#e6f2f1]/60">0335-7462807</p>
+
         </div>
       </div>
 
