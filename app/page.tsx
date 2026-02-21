@@ -58,18 +58,18 @@ export default function Home() {
                 {/* Micro-stats */}
                 <div className="flex items-center justify-center lg:justify-start gap-12 pt-8 border-t border-gray-100 mt-12 w-fit mx-auto lg:mx-0">
                   <div>
-                    <p className="text-2xl font-serif font-bold text-gray-900">1.2k+</p>
-                    <p className="text-xs uppercase tracking-widest text-gray-400 font-bold">Inquiries</p>
+                    <p className="text-2xl font-serif font-bold text-gray-900">3+</p>
+                    <p className="text-xs uppercase tracking-widest text-gray-400 font-bold">Awards Won</p>
                   </div>
                   <div className="w-px h-8 bg-gray-100"></div>
                   <div>
-                    <p className="text-2xl font-serif font-bold text-gray-900">5+</p>
-                    <p className="text-xs uppercase tracking-widest text-gray-400 font-bold">Clinics</p>
+                    <p className="text-2xl font-serif font-bold text-gray-900">8+</p>
+                    <p className="text-xs uppercase tracking-widest text-gray-400 font-bold">Years Exp</p>
                   </div>
                   <div className="w-px h-8 bg-gray-100"></div>
                   <div>
-                    <p className="text-2xl font-serif font-bold text-gray-900">10+</p>
-                    <p className="text-xs uppercase tracking-widest text-gray-400 font-bold">Research Papers</p>
+                    <p className="text-2xl font-serif font-bold text-gray-900">2</p>
+                    <p className="text-xs uppercase tracking-widest text-gray-400 font-bold">Scopus Pubs</p>
                   </div>
                 </div>
               </div>
@@ -128,15 +128,15 @@ export default function Home() {
         <section id="services" className="py-24 px-6 sm:px-12 lg:px-24 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20 gap-8">
-              <div className="space-y-4">
+              <div className="space-y-4 text-center md:text-left">
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/5 text-primary text-[10px] font-bold uppercase tracking-[0.2em] rounded-full">
                   <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span>
-                  Our Expertise
+                  Professional Scope
                 </div>
-                <h2 className="font-serif text-4xl lg:text-6xl text-gray-900 font-bold">Services & Expertise</h2>
+                <h2 className="font-serif text-4xl lg:text-6xl text-gray-900 font-bold">Clinical & Academic Focus</h2>
               </div>
-              <p className="text-gray-500 max-w-md text-lg font-light leading-relaxed">
-                Providing comprehensive support through evidence-based clinical practice and professional academic insight.
+              <p className="text-gray-500 max-w-md text-lg font-light leading-relaxed text-center md:text-left">
+                Bridging empirical research with clinical excellence through specialized evidence-based therapies and psychological sessions.
               </p>
             </div>
 
@@ -196,85 +196,149 @@ export default function Home() {
 
               <div className="lg:col-span-2 space-y-12">
                 <div className="space-y-4">
-                  <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary">Academic Track</p>
-                  <h2 className="font-serif text-4xl md:text-5xl text-gray-900 font-bold leading-tight">Teaching & Clinical Roles</h2>
+                  <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary">Professional Journey</p>
+                  <h2 className="font-serif text-4xl md:text-5xl text-gray-900 font-bold leading-tight">Work Experience</h2>
                   <p className="text-gray-500 text-lg font-light leading-relaxed">
-                    Bridging empirical research with clinical application in leading academic institutions.
+                    A timeline of clinical practice, teaching, and administrative roles.
                   </p>
                 </div>
 
                 <div className="space-y-10 relative before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[2px] before:bg-gradient-to-b before:from-primary before:to-transparent">
                   <div className="relative pl-12 group">
                     <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-white border-2 border-primary group-hover:bg-primary transition-all duration-300"></div>
-                    <p className="text-primary text-xs font-bold uppercase tracking-widest mb-1">2025 - Present</p>
-                    <h4 className="font-bold text-gray-900 text-xl">Visiting Faculty</h4>
-                    <p className="text-gray-500 text-sm italic font-light">DHA Suffa University • Psychology Department</p>
+                    <p className="text-primary text-xs font-bold uppercase tracking-widest mb-1">Sept 2025 - Present</p>
+                    <h4 className="font-bold text-gray-900 text-xl">Senior Lecturer</h4>
+                    <p className="text-gray-500 text-sm italic font-light">Institute of Business Management (IoBM)</p>
                   </div>
                   <div className="relative pl-12 group">
                     <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-white border-2 border-gray-200 group-hover:border-primary transition-all duration-300"></div>
-                    <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">2024 - Present</p>
+                    <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">March 2025 - July 2025</p>
                     <h4 className="font-bold text-gray-900 text-xl">Visiting Faculty</h4>
-                    <p className="text-gray-500 text-sm italic font-light">Ziauddin University • Clinical Psychology</p>
+                    <p className="text-gray-500 text-sm italic font-light">DHA Suffa University</p>
                   </div>
                   <div className="relative pl-12 group">
                     <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-white border-2 border-gray-200 group-hover:border-primary transition-all duration-300"></div>
-                    <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">2024 - 2025</p>
-                    <h4 className="font-bold text-gray-900 text-xl">Associate Clinical Psychologist</h4>
-                    <p className="text-gray-500 text-sm italic font-light">Integrated Psychology Clinic</p>
+                    <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">Feb 2024 - Aug 2025</p>
+                    <h4 className="font-bold text-gray-900 text-xl">Visiting Faculty</h4>
+                    <p className="text-gray-500 text-sm italic font-light">Ziauddin University</p>
+                  </div>
+                  <div className="relative pl-12 group">
+                    <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-white border-2 border-gray-200 group-hover:border-primary transition-all duration-300"></div>
+                    <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">June 2024 - Present</p>
+                    <h4 className="font-bold text-gray-900 text-xl">Consultant Clinical Psychologist</h4>
+                    <p className="text-gray-500 text-sm italic font-light">Hope and Cope (Part-time)</p>
+                  </div>
+                  <div className="relative pl-12 group">
+                    <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-white border-2 border-gray-200 group-hover:border-primary transition-all duration-300"></div>
+                    <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">2022 - 2024</p>
+                    <h4 className="font-bold text-gray-900 text-xl">Associate Psychologist</h4>
+                    <p className="text-gray-500 text-sm italic font-light">Umeed-e-Nau</p>
+                  </div>
+                  <div className="relative pl-12 group">
+                    <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-white border-2 border-gray-200 group-hover:border-primary transition-all duration-300"></div>
+                    <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">April 2022 - Feb 2024</p>
+                    <h4 className="font-bold text-gray-900 text-xl">HR Manager</h4>
+                    <p className="text-gray-500 text-sm italic font-light">Stratigia</p>
+                  </div>
+                  <div className="relative pl-12 group">
+                    <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-white border-2 border-gray-200 group-hover:border-primary transition-all duration-300"></div>
+                    <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">2017 - 2022</p>
+                    <h4 className="font-bold text-gray-900 text-xl">Clinical Internships</h4>
+                    <div className="text-gray-500 text-sm italic font-light space-y-2 mt-2">
+                      <p>• Wellness & Educational Intern — Aaina Clinic</p>
+                      <p>• Behavioral Therapist — Dar ul Sukun</p>
+                      <p>• Psychology Intern — Umeed-e-Nau</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="lg:col-span-3 space-y-10">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-gray-400">Selected Publications</h3>
-                  <div className="h-px flex-grow mx-6 bg-gray-100"></div>
-                </div>
-
+              <div className="lg:col-span-3 space-y-16">
                 <div className="space-y-8">
-                  {/* Pub 1 */}
-                  <div className="p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition-all group relative overflow-hidden">
-                    <div className="absolute top-0 left-0 w-1.5 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <div className="flex justify-between items-start gap-6">
-                      <div className="space-y-4">
-                        <div className="flex gap-2">
-                          <span className="px-2 py-0.5 bg-gray-50 text-[9px] font-bold text-gray-400 uppercase tracking-widest rounded border border-gray-100">Scopus Indexed</span>
-                        </div>
-                        <h4 className="text-xl font-bold text-gray-900 leading-snug group-hover:text-primary transition-colors">
-                          Understanding The Impact of Childhood Sexual Abuse and Child Maltreatment on Non-Suicidal Self-Harm
-                        </h4>
-                        <div className="flex items-center gap-3">
-                          <p className="text-sm text-gray-500 italic font-medium">Kurdish Studies, 12(5), 1463–1473</p>
-                          <span className="text-gray-300 text-[10px]">•</span>
-                          <span className="text-primary text-xs font-bold">2024</span>
-                        </div>
-                      </div>
-                      <a href="https://doi.org/10.53555/ks.v12i5.3497" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-50 text-gray-300 hover:bg-primary hover:text-white rounded-xl transition-all duration-300">
-                        <ExternalLink className="w-5 h-5" />
-                      </a>
-                    </div>
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-gray-400">Scholarly Publications</h3>
+                    <div className="h-px flex-grow mx-6 bg-gray-100"></div>
                   </div>
 
-                  {/* Pub 2 */}
-                  <div className="p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition-all group relative overflow-hidden">
-                    <div className="absolute top-0 left-0 w-1.5 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <div className="flex justify-between items-start gap-6">
-                      <div className="space-y-4">
-                        <div className="flex gap-2">
-                          <span className="px-2 py-0.5 bg-gray-50 text-[9px] font-bold text-gray-400 uppercase tracking-widest rounded border border-gray-100">Peer Reviewed</span>
+                  <div className="space-y-6">
+                    {/* Pub 1 */}
+                    <div className="p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition-all group relative overflow-hidden">
+                      <div className="absolute top-0 left-0 w-1.5 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="flex justify-between items-start gap-6">
+                        <div className="space-y-4">
+                          <div className="flex gap-2">
+                            <span className="px-2 py-0.5 bg-gray-50 text-[9px] font-bold text-gray-400 uppercase tracking-widest rounded border border-gray-100">Kurdish Studies</span>
+                          </div>
+                          <h4 className="text-xl font-bold text-gray-900 leading-snug group-hover:text-primary transition-colors">
+                            Understanding The Impact of Childhood Sexual Abuse and Child Maltreatment on Non-Suicidal Self-Harm
+                          </h4>
+                          <p className="text-sm text-gray-500 italic font-medium">Vol. 12(5), 1463–1473 | 2024</p>
                         </div>
-                        <h4 className="text-xl font-bold text-gray-900 leading-snug group-hover:text-primary transition-colors">
-                          A Comparative Study of the Meaning of Life and Academic Motivation
-                        </h4>
-                        <div className="flex items-center gap-3">
-                          <p className="text-sm text-gray-500 italic font-medium">Migration Letters, 21(S14), 525–544</p>
-                          <span className="text-gray-300 text-[10px]">•</span>
-                          <span className="text-primary text-xs font-bold">2024</span>
+                        <a href="https://doi.org/10.53555/ks.v12i5.3497" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-50 text-gray-300 hover:bg-primary hover:text-white rounded-xl transition-all duration-300" aria-label="View Publication on Kurdish Studies Website">
+                          <ExternalLink className="w-5 h-5" />
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Pub 2 */}
+                    <div className="p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition-all group relative overflow-hidden">
+                      <div className="absolute top-0 left-0 w-1.5 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="flex justify-between items-start gap-6">
+                        <div className="space-y-4">
+                          <div className="flex gap-2">
+                            <span className="px-2 py-0.5 bg-gray-50 text-[9px] font-bold text-gray-400 uppercase tracking-widest rounded border border-gray-100">Migration Letters</span>
+                          </div>
+                          <h4 className="text-xl font-bold text-gray-900 leading-snug group-hover:text-primary transition-colors">
+                            A Comparative Study of the Meaning of Life, Academic Motivation, and Achievement
+                          </h4>
+                          <p className="text-sm text-gray-500 italic font-medium">Vol. 21(S14), 525–544 | 2024</p>
+                        </div>
+                        <a href="https://doi.org/10.59670/ml.v21iS14.11300" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-50 text-gray-300 hover:bg-primary hover:text-white rounded-xl transition-all duration-300" aria-label="View Publication on Migration Letters Website">
+                          <ExternalLink className="w-5 h-5" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-8 pt-8 border-t border-gray-100">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-gray-400">Awards & Education</h3>
+                    <div className="h-px flex-grow mx-6 bg-gray-100"></div>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="space-y-4">
+                      <h5 className="text-[10px] font-bold text-primary uppercase tracking-widest">Conferences</h5>
+                      <div className="space-y-3">
+                        <div className="flex gap-3">
+                          <Award className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                          <p className="text-sm text-gray-600 font-light"><span className="font-bold text-gray-900">ICE 2025</span> — Best Presenter Award</p>
+                        </div>
+                        <div className="flex gap-3">
+                          <Award className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                          <p className="text-sm text-gray-600 font-light"><span className="font-bold text-gray-900">Psychiatry Conf. 2021</span> — 1st Position (Best Poster)</p>
+                        </div>
+                        <div className="flex gap-3">
+                          <Award className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                          <p className="text-sm text-gray-600 font-light"><span className="font-bold text-gray-900">Psychology Research Conf. 2021</span> — Research Presenter</p>
                         </div>
                       </div>
-                      <a href="https://doi.org/10.59670/ml.v21iS14.11300" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-50 text-gray-300 hover:bg-primary hover:text-white rounded-xl transition-all duration-300">
-                        <ExternalLink className="w-5 h-5" />
-                      </a>
+                    </div>
+                    <div className="space-y-4">
+                      <h5 className="text-[10px] font-bold text-primary uppercase tracking-widest">Education</h5>
+                      <div className="space-y-3">
+                        <p className="text-sm text-gray-600 font-light"><span className="font-bold text-gray-900">MPhil in Psychology</span><br />IPP, BUKC (2022-2024)</p>
+                        <p className="text-sm text-gray-600 font-light"><span className="font-bold text-gray-900">Exchange Program</span><br />Universitas Airlangga, Indonesia (2023)</p>
+                        <p className="text-sm text-gray-600 font-light"><span className="font-bold text-gray-900">Bachelor in Psychology</span><br />IPP, BUKC (2017-2021)</p>
+                      </div>
+
+                      <h5 className="text-[10px] font-bold text-primary uppercase tracking-widest pt-4">Languages</h5>
+                      <div className="flex flex-wrap gap-2">
+                        {['English', 'Urdu', 'Indonesian (A1)'].map((lang) => (
+                          <span key={lang} className="px-2 py-1 bg-white border border-gray-100 rounded text-[10px] font-medium text-gray-500">{lang}</span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -318,6 +382,15 @@ export default function Home() {
                       <p className="text-lg font-medium">0335-7462807</p>
                     </div>
                   </div>
+                  <div className="flex items-start gap-6 group w-fit">
+                    <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-500 group-hover:scale-110 shadow-lg shadow-white/5 shrink-0">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-white/40 uppercase tracking-widest mb-1">Location</p>
+                      <p className="text-sm font-medium leading-relaxed max-w-[200px]">Dulara Pride Apartments, Numaish, Soldier Bazaar, Karachi</p>
+                    </div>
+                  </div>
                   <a href="https://linkedin.com/in/hina-usman/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 group w-fit">
                     <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center group-hover:bg-[#0077b5] group-hover:text-white transition-all duration-500 group-hover:scale-110">
                       <Linkedin className="w-6 h-6" />
@@ -343,8 +416,8 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="space-y-3">
-                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 ml-1">Subject</label>
-                    <select className="w-full bg-white/10 border-none rounded-2xl p-5 text-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all appearance-none cursor-pointer">
+                    <label htmlFor="subject" className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 ml-1">Subject</label>
+                    <select id="subject" name="subject" aria-label="Select inquiry subject" className="w-full bg-white/10 border-none rounded-2xl p-5 text-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all appearance-none cursor-pointer">
                       <option className="bg-primary text-white">Clinical Inquiry</option>
                       <option className="bg-primary text-white">Academic Collaboration</option>
                       <option className="bg-primary text-white">Research Opportunity</option>
