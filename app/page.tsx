@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Mail, Linkedin, ExternalLink, ArrowRight, User, BookOpen, GraduationCap, Award } from 'lucide-react';
+import { ContactForm } from '@/components/ContactForm';
 
 export default function Home() {
   return (
@@ -383,62 +384,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-3xl rounded-[3rem] p-8 md:p-14 border border-white/10 shadow-2xl">
-                <form action="https://formspree.io/f/hinau766@gmail.com" method="POST" className="space-y-8">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                    <div className="space-y-3">
-                      <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 ml-1">Full Name</label>
-                      <input
-                        type="text"
-                        name="name"
-                        required
-                        className="w-full bg-white/10 border-none rounded-2xl p-5 text-white placeholder-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all"
-                        placeholder="Jane Doe"
-                      />
-                    </div>
-                    <div className="space-y-3">
-                      <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 ml-1">Email Address</label>
-                      <input
-                        type="email"
-                        name="email"
-                        required
-                        className="w-full bg-white/10 border-none rounded-2xl p-5 text-white placeholder-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all"
-                        placeholder="jane@example.com"
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-3">
-                    <label htmlFor="subject" className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 ml-1">Subject</label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      aria-label="Select inquiry subject"
-                      className="w-full bg-white/10 border-none rounded-2xl p-5 text-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all appearance-none cursor-pointer"
-                    >
-                      <option className="bg-primary text-white">Clinical Inquiry</option>
-                      <option className="bg-primary text-white">Academic Collaboration</option>
-                      <option className="bg-primary text-white">Research Opportunity</option>
-                      <option className="bg-primary text-white">Other</option>
-                    </select>
-                  </div>
-                  <div className="space-y-3">
-                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 ml-1">Your Message</label>
-                    <textarea
-                      name="message"
-                      required
-                      rows={4}
-                      className="w-full bg-white/10 border-none rounded-2xl p-5 text-white placeholder-white/20 focus:ring-2 focus:ring-white/20 outline-none transition-all resize-none font-light"
-                      placeholder="Describe how I can support you..."
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full py-6 bg-white text-primary font-bold rounded-2xl hover:bg-accent hover:text-white transition-all transform hover:-translate-y-1 active:scale-95 shadow-2xl shadow-black/20 text-lg uppercase tracking-widest"
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </div>
+              <ContactForm />
             </div>
           </div>
         </section>
