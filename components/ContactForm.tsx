@@ -15,8 +15,8 @@ export function ContactForm() {
         const data = Object.fromEntries(formData.entries());
 
         try {
-            // Formspree endpoint
-            const response = await fetch("https://formspree.io/f/xeelnokg", {
+            // Formspree endpoint (direct email)
+            const response = await fetch("https://formspree.io/f/hinau766@gmail.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
