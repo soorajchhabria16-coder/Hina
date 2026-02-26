@@ -16,7 +16,8 @@ export function ContactForm() {
 
         try {
             // Formspree endpoint (direct email)
-            const response = await fetch("https://formspree.io/f/hinau766@gmail.com", {
+            // Formspree endpoint (direct email)
+            const response = await fetch("https://formspree.io/f/xeelnokg", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -49,7 +50,7 @@ export function ContactForm() {
                 <div className="space-y-3">
                     <h3 className="text-4xl font-serif font-bold text-white">Message Sent!</h3>
                     <p className="text-xl text-white/70 font-light leading-relaxed max-w-sm">
-                        Thank you for reaching out, Hina. I&apos;ll review your message and get back to you shortly.
+                        Thank you for reaching out. Your message has been sent, and I&apos;ll get back to you shortly.
                     </p>
                 </div>
                 <button
